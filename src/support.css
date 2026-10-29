@@ -87,3 +87,12 @@
 }
 .checklist b { display: block; font-weight: 600; }
 .checklist span { color: var(--muted); font-size: 0.875rem; }
+
+.email-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-top: 16px; color: var(--muted); font-size: 0.9375rem; }
+.email-row code { color: var(--fg); background: var(--bg-2); border: 1px solid var(--line); padding: 4px 8px; border-radius: 8px; font-size: 0.875rem; overflow-wrap: anywhere; }
+.copy-btn { appearance: none; cursor: pointer; font: 600 0.8125rem/1 var(--font-body); color: var(--accent); background: var(--accent-soft); border: 0; border-radius: 8px; padding: 7px 10px; }
+
+.nf .wrap { display: grid; gap: 20px; justify-items: start; padding-block: 96px 32px; }
+.nf .code { font: 800 clamp(4rem, 3rem + 6vw, 7.5rem)/1 var(--font-display); letter-spacing: -0.04em; color: var(--accent); }
+.nf h1 { font-size: var(--step-2); }
+.nf p { color: var(--fg-2); max-width: 40em; }

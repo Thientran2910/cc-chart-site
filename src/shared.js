@@ -36,6 +36,15 @@
     setMode(m); save(KEY_MODE, m);
   });
 
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var el = document.getElementById(b.getAttribute('data-copy'));
+      var done = function () { b.classList.add('done'); setTimeout(function () { b.classList.remove('done'); }, 1500); };
+      var select = function () { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+      if (navigator.clipboard) navigator.clipboard.writeText(el.textContent).then(done, select); else select();
+    });
+  });
+
   setLang(root.getAttribute('data-lang') === 'vi' ? 'vi' : 'en');
   setMode(root.getAttribute('data-mode') === 'light' ? 'light' : 'dark');
 })();

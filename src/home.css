@@ -1,0 +1,75 @@
+/* Phone frame: real simulator screenshots inside a drawn iPhone bezel. */
+.phone {
+  position: relative; width: 100%; aspect-ratio: 1320 / 2868; max-width: 100%;
+  border-radius: 13.5% / 6.2%; padding: 3.2%;
+  background: linear-gradient(150deg, var(--bezel-hi), var(--bezel) 40%);
+  box-shadow: 0 0 0 1px var(--line-2), 0 40px 80px -30px rgba(0, 0, 0, 0.65);
+}
+.phone img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 11.4% / 5.25%; background: #000; }
+:root { --bezel: #1a1f1d; --bezel-hi: #3a423e; }
+:root[data-mode="light"] { --bezel: #202624; --bezel-hi: #4a5450; }
+
+/* Hero */
+.l-hero { position: relative; overflow: hidden; }
+.l-hero::before { content: ""; position: absolute; inset: 0; background: var(--glow); pointer-events: none; }
+.l-hero .hero-grid { position: relative; display: grid; gap: 48px; padding-block: 56px 24px; align-items: center; }
+@media (min-width: 940px) { .l-hero .hero-grid { grid-template-columns: 0.9fr 1.1fr; padding-block: 80px 40px; } }
+.l-copy { display: grid; gap: 22px; min-width: 0; }
+.l-hero h1 { font-size: clamp(2.375rem, 1.5rem + 3.6vw, 4.25rem); line-height: 1.02; font-weight: 800; letter-spacing: -0.035em; }
+.l-hero h1 em { font-style: normal; color: var(--accent); }
+.soon {
+  display: inline-flex; align-items: center; gap: 12px; padding: 10px 16px 10px 12px; border-radius: 14px;
+  background: var(--fg); color: var(--bg); text-decoration: none;
+}
+.soon svg { width: 26px; height: 26px; }
+.soon small { display: block; font: 500 0.6875rem/1.2 var(--font-body); opacity: 0.75; }
+.soon b { display: block; font: 700 1.0625rem/1.15 var(--font-display); }
+.trio { position: relative; display: grid; grid-template-columns: 1fr 1.18fr 1fr; align-items: center; gap: 0; min-width: 0; max-width: 640px; margin-inline: auto; width: 100%; }
+.trio .phone:nth-child(1) { transform: translateX(18%) scale(0.92) rotate(-5deg); z-index: 0; opacity: 0.9; }
+.trio .phone:nth-child(2) { z-index: 1; }
+.trio .phone:nth-child(3) { transform: translateX(-18%) scale(0.92) rotate(5deg); z-index: 0; opacity: 0.9; }
+@media (max-width: 560px) {
+  .trio { grid-template-columns: 1fr; max-width: 280px; }
+  .trio .phone:nth-child(1), .trio .phone:nth-child(3) { display: none; }
+}
+
+/* Stats */
+.l-hero .stats-wrap { position: relative; }
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin-top: 56px; }
+@media (min-width: 760px) { .stats { grid-template-columns: repeat(4, 1fr); } }
+.stats div { background: var(--surface); padding: 20px 22px; display: grid; gap: 4px; min-width: 0; }
+.stats b { font: 800 1.75rem/1.1 var(--font-display); letter-spacing: -0.02em; }
+.stats span { color: var(--muted); font-size: 0.875rem; }
+
+/* Feature rows */
+.rows { display: grid; gap: 96px; }
+.row { display: grid; gap: 40px; align-items: center; }
+@media (min-width: 860px) {
+  .row { grid-template-columns: 1.1fr 0.9fr; gap: 80px; }
+  .row.flip > .row-media { order: -1; }
+}
+.row-copy { display: grid; gap: 16px; min-width: 0; max-width: 34em; }
+.row-copy h2 { font-size: var(--step-2); font-weight: 700; }
+.row-copy p { color: var(--fg-2); }
+.row-media { position: relative; display: grid; place-items: center; min-width: 0; padding: 32px 0; }
+.row-media::before { content: ""; position: absolute; inset: 0; border-radius: 28px; background: var(--surface); border: 1px solid var(--line); }
+.row-media .phone { width: min(280px, 72%); }
+.ticks { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 10px; }
+.ticks li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; color: var(--fg-2); }
+.ticks svg { width: 20px; height: 20px; color: var(--accent); margin-top: 3px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips span { font: 500 0.75rem/1 var(--font-mono); padding: 6px 9px; border-radius: 7px; background: var(--surface-2); color: var(--fg-2); border: 1px solid var(--line); }
+
+/* AI + privacy band */
+.duo { display: grid; gap: 16px; }
+@media (min-width: 860px) { .duo { grid-template-columns: 1fr 1fr; } }
+.panel { border: 1px solid var(--line); border-radius: 20px; background: var(--surface); padding: 32px 28px; display: grid; gap: 14px; align-content: start; min-width: 0; }
+.panel .ic { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); }
+.panel .ic svg { width: 22px; height: 22px; }
+.panel h2 { font-size: var(--step-1); font-weight: 700; }
+.panel p { color: var(--fg-2); }
+.panel a.more { font-weight: 600; text-decoration: none; }
+
+.final { margin-top: 0; text-align: left; }
+.final .contact { grid-template-columns: 1fr; }
+@media (min-width: 860px) { .final .contact { grid-template-columns: 1fr auto; } }

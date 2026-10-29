@@ -130,10 +130,10 @@ img { max-width: 100%; }
 /* Mobile page tabs (header nav hides on phones) */
 .site-header .tabs-m { display: none; }
 @media (max-width: 560px) {
-  .site-header .tabs-m { display: flex; gap: 6px; padding-block: 0 12px; }
+  .site-header .tabs-m { display: flex; gap: 6px; padding-block: 0 12px; overflow-x: auto; scrollbar-width: none; }
   .tabs-m a {
-    flex: 1; text-align: center; text-decoration: none; color: var(--muted); font-size: var(--step--1); font-weight: 600;
-    padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface);
+    flex: none; text-decoration: none; color: var(--muted); font-size: var(--step--1); font-weight: 600; white-space: nowrap;
+    padding: 7px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
   }
   .tabs-m a[aria-current="page"] { color: var(--fg); border-color: var(--line-2); background: var(--surface-2); }
 }
