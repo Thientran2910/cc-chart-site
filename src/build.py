@@ -40,7 +40,7 @@ BOOT = ("<script>(function(){var d=document.documentElement,s=null;try{s=window.
         "d.lang=l==='vi'?'vi':'en';})();</script>")
 
 # Public support email; empty hides every email line. Set it, then run this script.
-SUPPORT_EMAIL = ''
+SUPPORT_EMAIL = 'ccchart.support@gmail.com'
 ISSUES = 'https://github.com/Thientran2910/cc-chart-site/issues/new'
 
 NAV = [('home', 'HOME', 'Overview', 'Tổng quan'), ('support', 'SUPPORT', 'Support', 'Hỗ trợ'),
