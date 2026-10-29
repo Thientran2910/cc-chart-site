@@ -34,7 +34,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="
 
 BOOT = ("<script>(function(){var d=document.documentElement,s=null;try{s=window.localStorage}catch(e){}"
         "function g(k){try{return s&&s.getItem(k)}catch(e){return null}}"
-        "var l=g('cc-chart-legal.lang'),m=g('cc-chart-legal.mode');"
+        "var l=g('cc-chart-site.lang'),m=g('cc-chart-site.mode');"
         "d.setAttribute('data-lang',l==='vi'?'vi':'en');d.setAttribute('data-mode',m==='light'?'light':'dark');"
         "d.lang=l==='vi'?'vi':'en';})();</script>")
 
@@ -67,7 +67,7 @@ FOOTER = '''<footer class="site-footer"><div class="wrap">
     <div class="foot-links">
       <a href="{{HOME}}"><span class="en">Support</span><span class="vi">Hỗ trợ</span></a>
       <a href="{{PRIVACY}}"><span class="en">Privacy Policy</span><span class="vi">Chính sách quyền riêng tư</span></a>
-      <a href="https://github.com/Thientran2910/cc-chart-legal/issues/new" target="_blank" rel="noopener"><span class="en">Contact</span><span class="vi">Liên hệ</span></a>
+      <a href="https://github.com/Thientran2910/cc-chart-site/issues/new" target="_blank" rel="noopener"><span class="en">Contact</span><span class="vi">Liên hệ</span></a>
     </div>
   </div>
   <p class="foot-note"><span class="en">Price data comes from public exchange APIs. CC Chart is not an exchange and never holds user funds. Information in the app is for reference only and is not investment advice.</span><span class="vi">Dữ liệu giá lấy từ API công khai của các sàn. CC Chart không phải sàn giao dịch, không giữ tiền của người dùng. Thông tin trong ứng dụng chỉ để tham khảo, không phải lời khuyên đầu tư.</span></p>

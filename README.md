@@ -2,8 +2,8 @@
 
 Trang GitHub Pages dùng cho App Store / Google Play.
 
-- Hỗ trợ: https://thientran2910.github.io/cc-chart-legal/
-- Privacy: https://thientran2910.github.io/cc-chart-legal/privacy.html
+- Hỗ trợ: https://thientran2910.github.io/cc-chart-site/
+- Privacy: https://thientran2910.github.io/cc-chart-site/privacy.html
 
 ## Sửa trang
 

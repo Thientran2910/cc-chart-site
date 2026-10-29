@@ -1,6 +1,6 @@
 (function () {
   var root = document.documentElement;
-  var KEY_LANG = 'cc-chart-legal.lang', KEY_MODE = 'cc-chart-legal.mode';
+  var KEY_LANG = 'cc-chart-site.lang', KEY_MODE = 'cc-chart-site.mode';
   function save(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 
   function setLang(lang) {
