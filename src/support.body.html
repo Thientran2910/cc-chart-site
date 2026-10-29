@@ -1,0 +1,142 @@
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="en">Help center</span><span class="vi">Trung tâm hỗ trợ</span></span>
+      <h1><span class="en">Help for <em>CC Chart</em></span><span class="vi">Hỗ trợ <em>CC Chart</em></span></h1>
+      <p class="lead">
+        <span class="en">CC Chart is a crypto market charting app: real-time candlestick charts, multiple charts, technical indicators, drawing tools, price comparison, price alerts and demo trading (virtual funds) on the Binance and OKX Demo Trading environments, plus an AI Assistant that uses your own API key.</span>
+        <span class="vi">CC Chart là ứng dụng xem biểu đồ và dữ liệu thị trường tiền mã hoá: biểu đồ nến thời gian thực, nhiều biểu đồ cùng lúc, chỉ báo kỹ thuật, công cụ vẽ, so sánh giá, cảnh báo giá và giao dịch demo (tiền ảo) trên môi trường Demo Trading của Binance, OKX, cùng Trợ lý AI dùng API key của chính bạn.</span>
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/Thientran2910/cc-chart-legal/issues/new" target="_blank" rel="noopener">
+          {{I_CHAT}}<span class="en">Open a support request</span><span class="vi">Tạo yêu cầu hỗ trợ</span>
+        </a>
+        <a class="btn btn-ghost" href="{{PRIVACY}}">
+          {{I_SHIELD}}<span class="en">Privacy Policy</span><span class="vi">Chính sách quyền riêng tư</span>
+        </a>
+      </div>
+      <div class="meta-row">
+        <span>{{I_CLOCK}}<span class="en">Usually replies within 3 business days</span><span class="vi">Thường phản hồi trong 3 ngày làm việc</span></span>
+        <span>{{I_USER}}<span class="en">Free GitHub account required</span><span class="vi">Cần tài khoản GitHub miễn phí</span></span>
+      </div>
+    </div>
+
+    <figure class="chart-card" style="margin:0" aria-label="Illustration of a candlestick chart">
+      <div class="chart-top">
+        <span class="pair">BTC/USDT<small>PERP</small></span>
+        <span class="live"><span class="en">PREVIEW</span><span class="vi">MINH HOẠ</span></span>
+      </div>
+      <div class="tf" aria-hidden="true">
+        <span>15m</span><span class="on">1H</span><span>4H</span><span>1D</span><span>1W</span>
+        <span class="ma">MA(7)</span>
+      </div>
+      <canvas id="candles" role="img" aria-label="Animated candlestick chart illustration"></canvas>
+      <figcaption class="chart-foot">
+        <span><b>40+</b> <span class="en">indicators</span><span class="vi">chỉ báo</span></span>
+        <span><b>Binance · OKX</b></span>
+        <span class="en">Illustration, not live market data</span><span class="vi">Hình minh hoạ, không phải dữ liệu thật</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow"><span class="en">In the app</span><span class="vi">Trong ứng dụng</span></span>
+      <h2><span class="en">What CC Chart does</span><span class="vi">CC Chart làm được gì</span></h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <div class="ic">{{I_CANDLE}}</div>
+        <h3><span class="en">Real-time charts</span><span class="vi">Biểu đồ thời gian thực</span></h3>
+        <p><span class="en">Live candlesticks across many timeframes. Pinch, drag and tap any candle. Portrait, full-screen landscape, or several charts on one screen.</span><span class="vi">Nến cập nhật liên tục, nhiều khung thời gian. Phóng to, kéo, chạm xem từng nến. Xem dọc, xoay ngang toàn màn hình hoặc nhiều biểu đồ cùng lúc.</span></p>
+      </div>
+      <div class="feature">
+        <div class="ic">{{I_WAVE}}</div>
+        <h3><span class="en">40+ indicators</span><span class="vi">Hơn 40 chỉ báo</span></h3>
+        <p><span class="en">Customize parameters, colors and line widths, and stack sub-indicators below the main chart.</span><span class="vi">Tuỳ chỉnh tham số, màu, độ dày nét và xếp nhiều chỉ báo phụ dưới biểu đồ chính.</span></p>
+        <span class="tag">MA · EMA · BOLL · MACD · RSI · KDJ · VWAP · SAR · Ichimoku</span>
+      </div>
+      <div class="feature">
+        <div class="ic">{{I_PEN}}</div>
+        <h3><span class="en">Drawing tools</span><span class="vi">Công cụ vẽ</span></h3>
+        <p><span class="en">Trend lines, channels, Fibonacci, shapes and text notes. Drawings are saved on your device.</span><span class="vi">Đường xu hướng, kênh giá, Fibonacci, hình học và chữ chú thích. Hình vẽ lưu trên máy.</span></p>
+      </div>
+      <div class="feature">
+        <div class="ic">{{I_LIST}}</div>
+        <h3><span class="en">Market tracking</span><span class="vi">Theo dõi thị trường</span></h3>
+        <p><span class="en">Binance and OKX markets with price, 24h change and volume. Compare coins on one chart and get alerts at your price.</span><span class="vi">Thị trường Binance và OKX: giá, biến động 24 giờ, khối lượng. So sánh nhiều đồng trên một biểu đồ và nhận cảnh báo khi giá chạm mức bạn đặt.</span></p>
+      </div>
+      <div class="feature">
+        <div class="ic">{{I_FLASK}}</div>
+        <h3><span class="en">Demo trading</span><span class="vi">Giao dịch demo</span></h3>
+        <p><span class="en">Connect an exchange Demo Trading account to practice Spot and Futures orders with a virtual balance. No real money.</span><span class="vi">Kết nối tài khoản Demo Trading của sàn để luyện đặt lệnh Spot và Futures bằng số dư ảo. Không dùng tiền thật.</span></p>
+      </div>
+      <div class="feature">
+        <div class="ic">{{I_SPARK}}</div>
+        <h3><span class="en">AI Assistant</span><span class="vi">Trợ lý AI</span></h3>
+        <p><span class="en">Ask about the chart and let the AI draw trend lines and price zones on it, with your own Anthropic or OpenAI API key.</span><span class="vi">Hỏi về biểu đồ và nhờ AI vẽ đường xu hướng, vùng giá ngay trên chart, bằng API key Anthropic hoặc OpenAI của chính bạn.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap faq-layout">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2><span class="en">Frequently asked questions</span><span class="vi">Câu hỏi thường gặp</span></h2>
+      <p><span class="en">Can't find your answer? Open a support request and we'll get back to you.</span><span class="vi">Chưa thấy câu trả lời? Hãy tạo yêu cầu hỗ trợ, chúng tôi sẽ phản hồi.</span></p>
+    </div>
+    <div class="faq en">
+      <details open><summary>Do I need an account?</summary><p class="ans">No. All market features work right away.</p></details>
+      <details><summary>Where does price data come from?</summary><p class="ans">From public exchange APIs. CC Chart is not an exchange and never holds user funds.</p></details>
+      <details><summary>Where are my settings stored?</summary><p class="ans">On your device only. Uninstalling the app deletes them.</p></details>
+      <details><summary>Does demo trading use real money?</summary><p class="ans">No. Demo trading runs on the exchange's Demo Trading environment with a virtual balance. The app never trades with real money.</p></details>
+      <details><summary>How does the AI Assistant work?</summary><p class="ans">You add your own Anthropic (Claude) or OpenAI API key. What you type and the relevant chart context go directly from your device to the provider you choose. We never receive or store this content.</p></details>
+      <details><summary>Where are my API keys kept?</summary><p class="ans">In the operating system's secure storage (iOS Keychain, Android Keystore). A key is only sent directly to the service it belongs to.</p></details>
+      <details><summary>Is the information in the app investment advice?</summary><p class="ans">No. Information in the app is for reference only and is not financial advice.</p></details>
+    </div>
+    <div class="faq vi">
+      <details open><summary>Ứng dụng có cần đăng ký tài khoản không?</summary><p class="ans">Không. Mọi tính năng xem thị trường dùng được ngay.</p></details>
+      <details><summary>Dữ liệu giá lấy từ đâu?</summary><p class="ans">Từ API công khai của các sàn giao dịch. CC Chart không phải sàn giao dịch và không giữ tiền của người dùng.</p></details>
+      <details><summary>Cài đặt của tôi lưu ở đâu?</summary><p class="ans">Trên chính thiết bị của bạn. Gỡ ứng dụng sẽ xoá các dữ liệu này.</p></details>
+      <details><summary>Giao dịch demo có dùng tiền thật không?</summary><p class="ans">Không. Giao dịch demo chạy trên môi trường Demo Trading của sàn với số dư ảo. Ứng dụng không thực hiện giao dịch bằng tiền thật.</p></details>
+      <details><summary>Trợ lý AI hoạt động thế nào?</summary><p class="ans">Bạn nhập API key Anthropic (Claude) hoặc OpenAI của chính mình. Nội dung bạn nhập và ngữ cảnh biểu đồ liên quan được gửi thẳng từ thiết bị tới nhà cung cấp bạn chọn. Chúng tôi không nhận và không lưu nội dung này.</p></details>
+      <details><summary>API key của tôi được lưu ở đâu?</summary><p class="ans">Trong kho bảo mật của hệ điều hành (Keychain trên iOS, Keystore trên Android). Key chỉ được gửi trực tiếp tới đúng dịch vụ đó.</p></details>
+      <details><summary>Thông tin trong ứng dụng có phải lời khuyên đầu tư không?</summary><p class="ans">Không. Thông tin trong ứng dụng chỉ để tham khảo, không phải lời khuyên tài chính.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <span class="eyebrow"><span class="en">Contact</span><span class="vi">Liên hệ</span></span>
+        <h2 style="margin-top:12px"><span class="en">Report a bug or send feedback</span><span class="vi">Báo lỗi hoặc góp ý</span></h2>
+        <p><span class="en">Support requests are handled on GitHub. A free account is enough. We usually reply within 3 business days.</span><span class="vi">Yêu cầu hỗ trợ được xử lý trên GitHub, chỉ cần tài khoản miễn phí. Chúng tôi thường phản hồi trong vòng 3 ngày làm việc.</span></p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://github.com/Thientran2910/cc-chart-legal/issues/new" target="_blank" rel="noopener">
+            {{I_GITHUB}}<span class="en">Open a support request</span><span class="vi">Tạo yêu cầu hỗ trợ</span>
+          </a>
+        </div>
+      </div>
+      <div>
+        <ol class="checklist en">
+          <li><div><b>Device and app version</b><span>For example iPhone 15, iOS 26, CC Chart 1.0</span></div></li>
+          <li><div><b>What happened</b><span>The steps you took and what you expected instead</span></div></li>
+          <li><div><b>Screenshots</b><span>Optional, but they help us find the problem faster</span></div></li>
+        </ol>
+        <ol class="checklist vi">
+          <li><div><b>Thiết bị và phiên bản ứng dụng</b><span>Ví dụ iPhone 15, iOS 26, CC Chart 1.0</span></div></li>
+          <li><div><b>Chuyện gì đã xảy ra</b><span>Các bước bạn đã làm và kết quả bạn mong đợi</span></div></li>
+          <li><div><b>Ảnh chụp màn hình</b><span>Không bắt buộc, nhưng giúp tìm lỗi nhanh hơn</span></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
