@@ -8,7 +8,7 @@
 <h2>1. Dữ liệu lưu trên thiết bị</h2>
 <ul>
 <li>Cài đặt, danh sách theo dõi, chỉ báo, hình vẽ trên biểu đồ, cảnh báo giá và dữ liệu giao dịch giả lập được lưu trong bộ nhớ của ứng dụng trên thiết bị. Chúng không được gửi đi đâu.</li>
-<li>Nếu bạn nhập API key Demo Trading của sàn, key được lưu trong kho bảo mật của hệ điều hành (Keychain trên iOS, Keystore trên Android) và chỉ được gửi trực tiếp tới sàn đó.</li>
+<li>Nếu bạn nhập API key Demo Trading của sàn hoặc API key của nhà cung cấp AI, key được lưu trong kho bảo mật của hệ điều hành (Keychain trên iOS, Keystore trên Android) và chỉ được gửi trực tiếp tới đúng dịch vụ đó.</li>
 <li>Ảnh bạn chọn để chèn vào biểu đồ chỉ được dùng trên thiết bị. Ảnh chụp biểu đồ chỉ được lưu vào Thư viện ảnh khi bạn yêu cầu.</li>
 <li>Face ID / Touch ID / vân tay do hệ điều hành xử lý. Ứng dụng chỉ nhận kết quả thành công hoặc thất bại, không nhận dữ liệu sinh trắc học.</li>
 </ul>
@@ -16,6 +16,7 @@
 <h2>2. Dữ liệu gửi tới bên thứ ba</h2>
 <ul>
 <li><b>Sàn giao dịch (Binance, OKX, Bybit):</b> ứng dụng gọi API công khai để lấy giá và biểu đồ. Như mọi kết nối Internet, sàn nhận được địa chỉ IP của bạn. Khi bạn dùng giao dịch demo, các yêu cầu đã ký bằng key Demo Trading của bạn đi thẳng từ thiết bị tới môi trường demo của sàn và tuân theo chính sách quyền riêng tư của sàn đó. Ứng dụng không thực hiện giao dịch bằng tiền thật.</li>
+<li><b>Nhà cung cấp AI (Anthropic), chỉ khi bạn dùng Trợ lý AI bằng API key của chính bạn:</b> nội dung bạn nhập và ngữ cảnh biểu đồ liên quan (mã giao dịch, khung thời gian, dữ liệu giá đang xem, hình vẽ) được gửi thẳng từ thiết bị tới nhà cung cấp để tạo câu trả lời, theo chính sách của nhà cung cấp đó. Chúng tôi không nhận và không lưu nội dung này.</li>
 <li><b>Firebase Crashlytics (Google):</b> khi ứng dụng gặp lỗi, ứng dụng gửi báo cáo sự cố gồm dấu vết lỗi, mẫu thiết bị, phiên bản hệ điều hành, phiên bản ứng dụng và một mã cài đặt ngẫu nhiên. Mục đích duy nhất là sửa lỗi. Dữ liệu này không gắn với danh tính của bạn. Xem <a href="https://firebase.google.com/support/privacy">chính sách của Firebase</a>.</li>
 </ul>
 
@@ -39,7 +40,7 @@
 <h2>1. Data stored on your device</h2>
 <ul>
 <li>Settings, watchlists, indicators, chart drawings, price alerts and paper-trading data are stored in the app's storage on your device. They are not sent anywhere.</li>
-<li>If you enter an exchange Demo Trading API key, it is stored in the operating system's secure storage (iOS Keychain, Android Keystore) and is only sent directly to that exchange.</li>
+<li>If you enter an exchange Demo Trading API key or an AI provider API key, it is stored in the operating system's secure storage (iOS Keychain, Android Keystore) and is only sent directly to that service.</li>
 <li>Images you pick to place on a chart stay on your device. Chart screenshots are saved to your Photos only when you ask.</li>
 <li>Face ID, Touch ID and fingerprint are handled by the operating system. The app only receives a success or failure result, never biometric data.</li>
 </ul>
@@ -47,6 +48,7 @@
 <h2>2. Data sent to third parties</h2>
 <ul>
 <li><b>Exchanges (Binance, OKX, Bybit):</b> the app calls public APIs for prices and charts. As with any Internet connection, the exchange sees your IP address. When you use demo trading, requests signed with your Demo Trading key go directly from your device to the exchange's demo environment under that exchange's privacy policy. The app never trades with real money.</li>
+<li><b>AI provider (Anthropic), only when you use the AI Assistant with your own API key:</b> what you type and the relevant chart context (symbol, timeframe, visible price data, drawings) are sent directly from your device to the provider to generate a reply, under that provider's policy. We never receive or store this content.</li>
 <li><b>Firebase Crashlytics (Google):</b> when the app crashes, it sends a crash report with the stack trace, device model, OS version, app version and a random installation ID, solely to fix bugs. This data is not linked to your identity. See <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</li>
 </ul>
 
